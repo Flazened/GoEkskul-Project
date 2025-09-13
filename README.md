@@ -1,14 +1,13 @@
-GoEkskul: Sistem Pendaftaran & Manajemen Ekstrakurikuler
+**GoEkskul**: Sistem Pendaftaran & Manajemen Ekstrakurikuler
 GoEkskul adalah sebuah aplikasi yang dirancang untuk mempermudah pengelolaan pendaftaran dan manajemen ekstrakurikuler di sekolah. Proyek ini dibuat untuk mengatasi masalah-masalah yang sering terjadi pada sistem manual, seperti risiko kesalahan data, kurangnya transparansi, dan sulitnya pemantauan.
 
 👥 Kontributor
-Vincent G.: UI/UX Designer 
+Vincent Genesius : UI/UX Designer 
 
-Kevin: Front-End Developer 
+Kevin : Front-End Developer 
 
-Michael Y.: Back-End Developer 
+Michael Yusliardy : Back-End Developer 
 
-=
 
 💡 Latar Belakang Masalah
 Proyek ini dibangun untuk menyelesaikan beberapa masalah utama yang dihadapi dalam pengelolaan ekstrakurikuler secara konvensional:
