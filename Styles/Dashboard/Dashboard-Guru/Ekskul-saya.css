@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN CONTENT */
+
+
+/* SIDEBAR */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1AA0D9;
+    color: #fff;
+    padding: 16px 0px 16px 0px;
+    justify-content: space-between;
+    height: 100vh;
+    width: 16rem;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+/* SIDEBAR TOP */
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* LOGO & NAME */
+.logo-name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo-name img {
+    height: 40px;
+}
+
+.logo-name h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* MENU & GENERAL */
+.menu-general {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* MENU-MAIN */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h1 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.menu-list:hover {
+    background-color: #005072;
+}
+
+.menu-list:active {
+    background-color: #005072;
+}
+
+.menu-list i {
+    font-size: 32px;
+}
+
+.menu-list h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.menu-list h2.active {
+    font-weight: 600;
+}
+
+/* GENERAL-MAIN */
+.general {
+    display: flex;
+    flex-direction: column;
+}
+
+.general h1 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.general-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.general-list:hover {
+    background-color: #005072;
+}
+
+.general-list:active {
+    background-color: #005072;
+}
+
+.general-list i {
+    font-size: 32px;
+}
+
+.general-list h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.general h2.active {
+    font-weight: 600;
+}
+/* LAST OF SIDEBAR TOP */
+
+/* PROFILE */
+.profile {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    gap: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+    border-radius: 999px;
+}
+
+.profile:hover {
+    background-color: #005072;
+}
+
+.profile:active {
+    background-color: #005072;
+}
+
+
+.profile img {
+    height: 48px;
+    width: 48px;
+    border-radius: 9999px;
+}
+
+.name-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-role h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.name-role p {
+    font-size: 12px;
+    font-weight: 300;
+}
+/* LAST OF PROFILE */
+/* LAST OF SIDEBAR */
+
+/* DASHBOARD */
+.dashboard {
+    margin-left: 16rem;
+    height: 100vh;
+}
+
+/* TOP */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 24px;
+    height: 4.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.search-bar input {
+    background-color: #F4F3FF;
+    border: none;
+    border-radius: 999px;
+    height: 40px;
+    padding-left: 16px;
+}
+
+.search-bar a i {
+    color: #a8a8a8;
+    background-color: #F4F3FF;
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    align-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.search-bar a i:hover {
+    color: #686868;
+    background-color: #afafaf;
+}
+
+.search-bar a i:active {
+    color: #686868;
+    background-color: #afafaf;
+}
+
+/* BOTTOM */
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ACTIVITY ITEM */
+
+.box {
+    display: flex;
+    background-color: #F4F3FF;
+    max-width: 1200px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+    transform: translateY(-4px);
+    transition: 0.4s all ease;
+}
+
+
+.left-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex: 1;
+}
+
+.middle-box , p {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    flex: 1.5;
+}
+
+.kanan-box {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.addbutton {
+  position: fixed;    
+  bottom: 30px;           
+  right: 30px;            
+  width: 60px;
+  height: 60px;
+  border-radius: 10%;     
+  background-color: #F4F3FF; 
+  color: rgb(0, 0, 0);
+  font-size: 32px;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER IKON */
+header {
+    background-color: #1AA0D9;
+    color: #fff;
+    padding: 8px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 10000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .logo h1 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* NAVIGATION */
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    position: relative;
+    display: inline-block;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ececec;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 15px;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: #fff;
+}
+
+nav a:hover::after {
+    width: 80%;
+    transition: 0.5s;
+}
+
+nav a.active {
+    color: #fff;
+    font-weight: 500;
+}
+
+/* MASUK & DAFTAR */
+.tombol-regis {
+    display: flex;
+    gap: 8px;
+}
+
+.tombol-regis a {
+    padding: 8px 15px;
+    border-radius: 9999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.tombol-regis .login {
+    background: #1AA0D9;
+    color: #fff;
+}
+
+.tombol-regis .login:hover {
+    background: #fff;
+    color: #1AA0D9;
+}
+
+.tombol-regis .login:active {
+    background: #fff;
+    color: #1AA0D9;
+}
+
+.tombol-regis .register {
+    background: #fff;
+    color: #1AA0D9;
+}
+
+.tombol-regis .register:hover {
+    background: #0c79a8;
+    color: #fff;
+}
+
+.tombol-regis .register:active {
+    background: #0c79a8;
+    color: #fff;
+}
+
+
+/* MAIN CONTENT */
+.kontak-full {
+    display: flex;
+    flex-direction: column;
+    margin: 48px 80px;
+    gap: 24px;
+}
+
+.kontak-full h1 {
+    font-size: 48px;
+    color: #1AA0D9;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.kontak-main {
+    display: flex;
+    gap: 32px;
+}
+
+/* KIRI */
+.kontak-left {
+    display: flex;
+    flex-direction: column;
+    background-color: #1AA0D9;
+    color: #fff;
+    gap: 24px;
+    padding: 32px 48px;
+    border-radius: 24px;
+}
+
+.left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-text h1 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.left-text p {
+    font-weight: 400;
+}
+
+.kontak-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.information-detail {
+    display: flex;
+    gap: 16px;
+}
+
+.information-detail i {
+    font-size: 56px;
+}
+
+.information-detail h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.follow-us {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.follow-us h1 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.social-media-ikon {
+    display: flex;
+    gap: 20px;
+}
+
+.social-media-ikon a {
+    color: #fff;
+    font-size: 32px;
+    transition: 0.5s;
+}
+
+.social-media-ikon a:hover {
+    color: #003850;
+}
+
+.social-media-ikon a:active {
+    color: #003850;
+}
+
+/* KANAN */
+.kontak-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.text-box h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-box input {
+    background-color: #E7E6F2;
+    border: none;
+    border-radius: 4px;
+    height: 48px;
+    width: 46rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-box-pesan {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-box-pesan h1 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-box-pesan input {
+    background-color: #E7E6F2;
+    border: none;
+    border-radius: 4px;
+    height: 16rem;
+    width: 46rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.kontak-right a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: #1AA0D9;
+    width: 11rem;
+    height: 3rem;
+    text-align: center;
+    align-content: center;
+    border-radius: 9999px;
+    transition: 0.5s;
+}
+
+.kontak-right a:hover {
+    background-color: #005072;
+}
+
+.kontak-right a:active {
+    background-color: #005072;
+}
+
+
+/* FOOTER */
+footer {
+    color: #fff;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 80px;
+    background-color: #1AA0D9;
+}
+
+.footer-column-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.goekskul-logo-display {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.goekskul-logo-display img {
+    height: 48px;
+}
+
+.goekskul-logo-display h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer-navigation {
+    display: flex;
+    gap: 64px;
+}
+
+.goekskul-kolom-navigasi {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.2;
+}
+
+.goekskul-kolom-navigasi h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.goekskul-kolom-navigasi a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.goekskul-kolom-navigasi a:hover {
+    color: #003850;
+    transform: translateX(10px);
+}
+
+.goekskul-kolom-navigasi a:active {
+    color: #003850;
+}
+
+.goekskul-kolom-kontak {
+    display: flex;
+    flex-direction: column;
+    line-height: 2.2;
+}
+
+.goekskul-kolom-kontak h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.kontak-information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 8px;
+}
+
+.kontak-information h2 {
+    color: #fff;
+    font-size: 16px;
+    transition: 0.5s;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.goekskul-sosmed h1 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.goekskul-sosmed a {
+    font-size: 32px;
+    margin-right: 16px;
+    color: white;
+    transition: 0.5s;
+}
+
+.goekskul-sosmed a:hover {
+    color: #003850;
+}
+
+.goekskul-sosmed a:active {
+    color: #003850;
+}
+
+.goekskul-hak-cipta {
+    background-color: #005072;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 0px;
+}

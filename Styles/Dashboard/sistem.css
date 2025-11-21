@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN CONTENT */
+
+
+/* SIDEBAR */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1AA0D9;
+    color: #fff;
+    padding: 16px 0px 16px 0px;
+    justify-content: space-between;
+    height: 100vh;
+    width: 16rem;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+}
+
+/* SIDEBAR TOP */
+.sidebar-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* LOGO & NAME */
+.logo-name {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.logo-name img {
+    height: 40px;
+}
+
+.logo-name h1 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* MENU & GENERAL */
+.menu-general {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+/* MENU-MAIN */
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu h1 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.menu-list:hover {
+    background-color: #005072;
+}
+
+.menu-list:active {
+    background-color: #005072;
+}
+
+.menu-list i {
+    font-size: 32px;
+}
+
+.menu-list h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.menu-list h2.active {
+    font-weight: 600;
+}
+
+/* GENERAL-MAIN */
+.general {
+    display: flex;
+    flex-direction: column;
+}
+
+.general h1 {
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.general-list {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.general-list:hover {
+    background-color: #005072;
+}
+
+.general-list:active {
+    background-color: #005072;
+}
+
+.general-list i {
+    font-size: 32px;
+}
+
+.general-list h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.general h2.active {
+    font-weight: 600;
+}
+/* LAST OF SIDEBAR TOP */
+
+/* PROFILE */
+.profile {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    gap: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: 0.3s;
+    border-radius: 999px;
+}
+
+.profile:hover {
+    background-color: #005072;
+}
+
+.profile:active {
+    background-color: #005072;
+}
+
+
+.profile img {
+    height: 48px;
+    width: 48px;
+    border-radius: 9999px;
+}
+
+.name-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-role h1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.name-role p {
+    font-size: 12px;
+    font-weight: 300;
+}
+/* LAST OF PROFILE */
+/* LAST OF SIDEBAR */
+
+/* DASHBOARD */
+.dashboard {
+    margin-left: 16rem;
+    height: 100vh;
+}
+
+/* TOP */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 8px 24px;
+    height: 4.2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.top h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
+.search-bar {
+    display: flex;
+    gap: 8px;
+}
+
+.search-bar input {
+    background-color: #F4F3FF;
+    border: none;
+    border-radius: 999px;
+    height: 40px;
+    padding-left: 16px;
+}
+
+.search-bar a i {
+    color: #a8a8a8;
+    background-color: #F4F3FF;
+    height: 40px;
+    width: 40px;
+    border-radius: 999px;
+    align-content: center;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.search-bar a i:hover {
+    color: #686868;
+    background-color: #afafaf;
+}
+
+.search-bar a i:active {
+    color: #686868;
+    background-color: #afafaf;
+}
+
+
+
+/* ------------------------------ */
+/*  Dropdown Umum (Base Style)    */
+/* ------------------------------ */
+.year-select {
+    appearance: none;           /* hilangkan panah bawaan browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 1000px;
+    margin-bottom: 20px;
+    
+    background-color: #f6f5fc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+.month-select {
+    appearance: none;           /* hilangkan panah bawaan browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    
+    background-color: #f6f5fc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+    
+
+/* ------------------------------ */
+/*  Optional: Panah Custom        */
+/* ------------------------------ */
+.date-picker select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 20 20' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 7l3 3 3-3z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 28px; /* beri ruang untuk panah */
+}
+
+
+
+
+
+
+.tabel-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden; /* supaya sudut membulat terlihat */
+}
+
+.tabel-eksul {
+    /* border-collapse: collapse;  hapus ini */
+    border-spacing: 0; /* untuk menghilangkan jarak antar sel */
+    width: 1150px;
+    background-color: #F4F3FF;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #000000; /* untuk border luar tabel */
+}
+
+/* Header */
+.tabel-eksul thead tr {
+    background-color: #1AA0D9;
+    border-radius:20px;
+}
+
+.tabel-eksul thead th {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Sudut atas melengkung */
+.tabel-eksul thead tr:first-child th:first-child {
+    border-top-left-radius: 19px;
+}
+.tabel-eksul thead tr:first-child th:last-child {
+    border-top-right-radius: 19px;
+}
+
+.tabel-eksul th,
+.tabel-eksul td {
+    padding: 10px 12px;
+    color: #333333;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+}
+
+/* Efek hover */
+.tabel-eksul tbody tr:hover {
+    background-color: #EDEBFF;
+}
+
+.basket {
+    margin-top: 20px;
+    margin-bottom: -50px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.month-select2 {
+    appearance: none;           /* hilangkan panah bawaan browser */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-left: 1080px;
+    margin-bottom: 20px;
+
+    
+    background-color: #f6f5fc;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+    
+
+/* ------------------------------ */
+/*  Optional: Panah Custom        */
+/* ------------------------------ */
+.date-picker select {
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 20 20' width='10' xmlns='http://www.w3.org/2000/svg'><path d='M7 7l3 3 3-3z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  padding-right: 28px; /* beri ruang untuk panah */
+}
+
+
+
+.tabel-container2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden; /* supaya sudut membulat terlihat */
+}
+
+.tabel-eksul2 {
+    /* border-collapse: collapse;  hapus ini */
+    border-spacing: 0; /* untuk menghilangkan jarak antar sel */
+    width: 1150px;
+    background-color: #F4F3FF;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #000000; /* untuk border luar tabel */
+}
+
+/* Header */
+.tabel-eksul2 thead tr {
+    background-color: #1AA0D9;
+    border-radius:20px;
+}
+
+.tabel-eksul2 thead th {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+/* Sudut atas melengkung */
+.tabel-eksul2 thead tr:first-child th:first-child {
+    border-top-left-radius: 19px;
+}
+.tabel-eksul2 thead tr:first-child th:last-child {
+    border-top-right-radius: 19px;
+}
+
+.tabel-eksul2 th,
+.tabel-eksul2 td {
+    padding: 10px 12px;
+    color: #333333;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: none;
+    border-right: none;
+}
+
+/* Efek hover */
+.tabel-eksul2 tbody tr:hover {
+    background-color: #EDEBFF;
+}
+
+.gitar {
+    margin-top: 10px;
+    margin-bottom: -50px;
+    margin-left: 60px;
+    font-weight: 400;
+    font-size: 50px;
+}
+
