@@ -1,11 +1,10 @@
-
 # GoEkskul
 merupakan Sistem Pendaftaran & Manajemen Ekstrakurikuler GoEkskul adalah sebuah aplikasi yang dirancang untuk mempermudah pengelolaan pendaftaran dan manajemen ekstrakurikuler di sekolah. Proyek ini dibuat untuk mengatasi masalah-masalah yang sering terjadi pada sistem manual, seperti risiko kesalahan data, kurangnya transparansi, dan sulitnya pemantauan.
 
 # 👥Kontributor
-- Vincent Genesius : UI/UX Designer
-- Kevin : Front-End Developer
-- Michael Yusliardy : Back-End Developer
+Vincent Genesius : UI/UX Designer
+Kevin : Front-End Developer
+Michael Yusliardy : Back-End Developer
 
 # 💡Latar Belakang
 Proyek ini dibangun untuk menyelesaikan beberapa masalah utama yang dihadapi dalam pengelolaan ekstrakurikuler secara konvensional: Tingginya Risiko Kesalahan Data: Pencatatan data pendaftar secara manual rentan terhadap human error, seperti salah ketik nama atau Nomor Induk Siswa (NIS). Keterbatasan Informasi & Transparansi: Siswa dan orang tua sering kali kesulitan mengakses informasi terkini mengenai jadwal, lokasi, dan pembina ekstrakurikuler. Kesulitan Rekapitulasi & Pemantauan: Panitia atau pembina kesulitan merekapitulasi data pendaftar dan memantau kehadiran anggota secara real-time. Potensi Manipulasi Absensi: Sistem absensi manual (tanda tangan) rentan terhadap praktik "titip absen". Informasi Cepat Tertimbun: Pengumuman penting seringkali tertimbun di grup chat, dan perubahan jadwal tidak sampai ke seluruh anggota tepat waktu, menyebabkan kebingungan.
@@ -40,17 +39,22 @@ Proyek ini dibangun untuk menyelesaikan beberapa masalah utama yang dihadapi dal
        o	Hapus pendaftaran
 
 # 💻Teknologi yang digunakan
-- Figma
-- HTML
-- CSS
-- JavaScript
-- PHP
-- MySQL
-- Laragon
++--------------+--------------+
+| Figma        | Design UI/UX |
++--------------+--------------+
+| HTML         |              |
+| CSS          |   Front End  |
+| JavaScript   |              |
++--------------+--------------+
+| PHP          |              |
+| MySQL        |    BackEnd   |
+| LAragon      |              |
++--------------+--------------+
+
 # 🔁Alur Sistem (Flow)
 
-User -> login -> Daftar Eskul -> Pending - Approved -> Masuk Ekskul
-                                         - Rejected
+User -> login -> Daftar Eskul -> Pending | Approved -> Masuk Ekskul
+                                         | Rejected
 
 # 🧱Entitas & Struktur Database
 +------------------------------------+---------------------+
@@ -84,7 +88,7 @@ cd GoEkskul-Project
 ```
 
 ## 2. Install & Jalankan Server
-- Install **XAMPP / Laragon**
+- Install **Laragon**
 - Aktifkan **Apache & MySQL**
 
 ## 3. Import Database
@@ -98,24 +102,31 @@ cd GoEkskul-Project
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "web_futsal";
+$db   = "goekskul_database";
 ```
 
 ## 5. Jalankan Website
 Akses aplikasi di browser Anda melalui URL lokal yang disediakan oleh Laragon.
 
+## 6.Akun
+Dikarenakan website ini adalah sebauh proyek kami menyiapkan 3 akun yaitu berisi
+-Siswa
+Gmail: Vincent.045@ski.sch.id
+Password: Vincent
+
+-Guru
+Gmail: AlexFischer.012@ski.sch.id
+Password: AlexFishcer
+
+-Admin
+Gmail: George.999@ski.sch.id
+Password: George
+
+dalam 3 akun ini akan memiliki tampilan yang berbeda, 
+- untuk siswa kalian bisa mendaftarkan untuk berekskul dimana.
+- untuk guru, tidak dapat mengakses halaman daftar ekskul dikarenakan akan disiapkan oleh admin langsung!
+- untuk admin, kendali penuh terdapat dihalaman admin, sehingga kedudukan admin dapat mengedit banyaka hal, mulai dari crud dalam akun, daftar ekskul dan jenis ekskul.
+
+
 # 📜 Lisensi
 Lisensi MIT Hak Cipta Dengan ini diberikan izin, secara gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk berurusan dengan Perangkat Lunak tanpa batasan, termasuk tanpa batasan hak untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, dan untuk mengizinkan orang yang kepadanya Perangkat Lunak disediakan untuk melakukannya, tunduk pada ketentuan berikut: Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam semua salinan atau bagian substansial dari Perangkat Lunak. PERANGKAT LUNAK INI DISEDIAKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN KELAYAKAN DAGANG, KESESUAIAN UNTUK TUJUAN TERTENTU, DAN NON-PELANGGARAN. DALAM KONDISI APA PUN PENULIS ATAU PEMILIK HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN, ATAU TANGGUNG JAWAB LAINNYA, BAIK DALAM TINDAKAN KONTRAK, WANPRESTASI, ATAU LAINNYA, YANG TIMBUL DARI, DARI, ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU PERDAGANGAN LAIN DALAM PERANGKAT LUNAK.
-
-Lisensi MIT
-Hak Cipta
-Dengan ini diberikan izin, secara gratis, kepada siapa pun yang memperoleh salinan perangkat lunak ini dan file dokumentasi terkait ("Perangkat Lunak"), untuk berurusan dengan Perangkat Lunak tanpa batasan, termasuk tanpa batasan hak untuk menggunakan, menyalin, memodifikasi, menggabungkan, menerbitkan, mendistribusikan, mensublisensikan, dan/atau menjual salinan Perangkat Lunak, dan untuk mengizinkan orang yang kepadanya Perangkat Lunak disediakan untuk melakukannya, tunduk pada ketentuan berikut:
-Pemberitahuan hak cipta di atas dan pemberitahuan izin ini harus disertakan dalam semua salinan atau bagian substansial dari Perangkat Lunak.
-PERANGKAT LUNAK INI DISEDIAKAN "SEBAGAIMANA ADANYA", TANPA JAMINAN APA PUN, TERSURAT MAUPUN TERSIRAT, TERMASUK NAMUN TIDAK TERBATAS PADA JAMINAN KELAYAKAN DAGANG, KESESUAIAN UNTUK TUJUAN TERTENTU, DAN NON-PELANGGARAN. DALAM KONDISI APA PUN PENULIS ATAU PEMILIK HAK CIPTA TIDAK BERTANGGUNG JAWAB ATAS KLAIM, KERUSAKAN, ATAU TANGGUNG JAWAB LAINNYA, BAIK DALAM TINDAKAN KONTRAK, WANPRESTASI, ATAU LAINNYA, YANG TIMBUL DARI, DARI, ATAU SEHUBUNGAN DENGAN PERANGKAT LUNAK ATAU PENGGUNAAN ATAU PERDAGANGAN LAIN DALAM PERANGKAT LUNAK.
-
-
-
-
-
-
-. 
