@@ -49,8 +49,8 @@ Proyek ini dibangun untuk menyelesaikan beberapa masalah utama yang dihadapi dal
 - Laragon
 # 🔁Alur Sistem (Flow)
 
-User -> login -> Daftar Eskul -> Pending | Approved -> Masuk Ekskul
-                                         | Rejected
+User -> login -> Daftar Eskul -> Pending - Approved -> Masuk Ekskul
+                                         - Rejected
 
 # 🧱Entitas & Struktur Database
 +------------------------------------+---------------------+
