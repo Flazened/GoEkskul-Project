@@ -40,18 +40,13 @@ Proyek ini dibangun untuk menyelesaikan beberapa masalah utama yang dihadapi dal
        o	Hapus pendaftaran
 
 # 💻Teknologi yang digunakan
-+--------------+--------------+
-| Figma        | Design UI/UX |
-+--------------+--------------+
-| HTML         |              |
-| CSS          |   Front End  |
-| JavaScript   |              |
-+--------------+--------------+
-| PHP          |              |
-| MySQL        |    BackEnd   |
-| LAragon      |              |
-+--------------+--------------+
-
+- Figma
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MySQL
+- Laragon
 # 🔁Alur Sistem (Flow)
 
 User -> login -> Daftar Eskul -> Pending | Approved -> Masuk Ekskul
